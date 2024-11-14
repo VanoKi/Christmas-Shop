@@ -117,5 +117,8 @@ header .container {
 
 /* main */
 
+.hero {
+  background: url("assets/hero_bg.jpg");
+}
 
 
