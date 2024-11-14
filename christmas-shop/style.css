@@ -52,15 +52,18 @@ img{
 /* header start */
 
 .logo_wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   padding: 8px 20px;
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
 }
 
-.logo_wrap img, .logo_title {
-  display: inline-block;
-}
+/*.logo_wrap img, .logo_title {*/
+/*  display: inline-block;*/
+/*}*/
 
 .logo_wrap img {
   width: 24px;
@@ -118,7 +121,10 @@ header .container {
 /* main */
 
 .hero {
-  background: url("assets/hero_bg.jpg");
+  background: url("assets/hero_bg.jpg") no-repeat center;
+  border-radius: 20px 20px 0 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 
