@@ -59,6 +59,7 @@ img{
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
+  transition: .3s ease;
 }
 
 /*.logo_wrap img, .logo_title {*/
@@ -108,6 +109,7 @@ header .container {
   display: block;
   padding: 12px 20px;
   border: 1px solid transparent;
+  transition: .3s ease;
 }
 
 .menu a:hover {
@@ -125,6 +127,54 @@ header .container {
   border-radius: 20px 20px 0 0;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.section_subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--static-white);
+}
 
+.main_title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--static-white);
+}
+
+.main_btn {
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 235px;
+  height: 56px;
+  background: var(--dark);
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--static-white);
+  transition: .4s ease;
+  cursor: pointer;
+}
+
+.main_btn:hover {
+  background: var(--static-white);
+  border: var(--static-white);
+  color: var(--dark);
+}
