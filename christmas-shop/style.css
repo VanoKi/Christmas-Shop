@@ -26,6 +26,8 @@ html {
 
 body {
   margin: 0 auto;
+  max-width: 1440px;
+  border: 1px solid lawngreen;
 }
 
 a {
@@ -73,7 +75,12 @@ img{
 
 .logo_title {
   text-transform: uppercase;
-
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: var(--dark);
 }
 
 header .container {
