@@ -126,6 +126,7 @@ header .container {
 
 main {
   background: var(--primary);
+  border-radius: 20px 20px 0 0;
 }
 
 .hero {
@@ -178,7 +179,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   color: var(--static-white);
-  transition: .4s ease;
+  transition: .3s ease;
   cursor: url("assets/cursor.svg"), pointer;
 }
 
