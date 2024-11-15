@@ -90,6 +90,8 @@ img{
 header .container {
   display: flex;
   justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   font-family: var(--font-family);
   font-weight: 600;
@@ -178,3 +180,4 @@ header .container {
   border: var(--static-white);
   color: var(--dark);
 }
+
