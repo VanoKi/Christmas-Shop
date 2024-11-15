@@ -124,8 +124,15 @@ header .container {
 
 /* main */
 
+main {
+  background: var(--primary);
+}
+
 .hero {
-  background: url("assets/hero_bg.jpg") no-repeat center;
+  background-image: url("assets/img/img-compressed/bg-ball.png");
+  background-size: 90%;
+  background-position: center top;
+  background-repeat: no-repeat;
   border-radius: 20px 20px 0 0;
   padding-top: 60px;
   padding-bottom: 60px;
