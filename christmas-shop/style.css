@@ -189,3 +189,51 @@ main {
   color: var(--dark);
 }
 
+/* about */
+
+.about {
+  padding: 60px 0;
+  background: url("assets/img/img-compressed/bg-snow.png");
+}
+
+.about__inner {
+  background: var(--static-white);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.about__inner img {
+  border-radius: 20px;
+}
+
+.section_subtitle-about {
+  text-align: left;
+  color: var(--primary);
+}
+
+.section__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.about__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: var(--dark);
+}
