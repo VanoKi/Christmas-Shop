@@ -170,7 +170,7 @@ header .container {
   text-align: center;
   color: var(--static-white);
   transition: .4s ease;
-  cursor: pointer;
+  cursor: url("assets/cursor.svg"), pointer;
 }
 
 .main_btn:hover {
