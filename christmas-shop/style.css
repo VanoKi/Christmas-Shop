@@ -274,3 +274,18 @@ main {
   border-radius: 20px;
 }
 
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.arrow {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--static-white);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
