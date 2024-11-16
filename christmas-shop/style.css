@@ -181,7 +181,7 @@ main {
   text-align: center;
   color: var(--static-white);
   transition: .3s ease;
-  cursor: url("assets/cursor.svg"), pointer;
+  cursor: url("assets/cursor.jpg"), pointer;
 }
 
 .main_btn:hover {
