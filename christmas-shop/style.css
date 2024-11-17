@@ -104,6 +104,8 @@ header .container {
 .menu {
   display: flex;
   text-transform: uppercase;
+  padding-left: 0;
+  gap: 8px;
 }
 
 .menu a {
