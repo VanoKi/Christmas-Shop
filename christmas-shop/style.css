@@ -477,6 +477,13 @@ footer .section__title, .section__subtitle {
   background: var(--content-background);
   border-radius: 20px;
   padding: 20px;
+  transition: .3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footer__card:hover p {
+  color: var(--primary);
 }
 
 .footer__second__container {
@@ -511,8 +518,9 @@ footer .section__title, .section__subtitle {
   line-height: 148%;
   text-align: center;
   color: var(--dark);
+  transition: .3s ease;
 }
 
-footer a:hover {
+footer a p:hover {
   color: var(--primary);
 }
