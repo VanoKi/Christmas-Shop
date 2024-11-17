@@ -56,6 +56,10 @@ section {
   padding: 60px 0;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
 /* header start */
 
 .logo_wrap {
@@ -355,6 +359,7 @@ main {
 .gift__card-titles {
   padding-top: 20px;
   padding-left: 20px;
+  padding-bottom: 20px;
   border-radius: 20px;
   background: var(--static-white);
   height: 112px;
