@@ -211,6 +211,13 @@ main {
   color: var(--dark);
 }
 
+.about__inner-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+}
+
 .about__inner img {
   border-radius: 20px;
 }
