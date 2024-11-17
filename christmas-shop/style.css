@@ -495,7 +495,7 @@ footer {
   margin-bottom: 60px;
 }
 
-footer .section__title, .section__subtitle, .section_subtitle {
+footer .section__title, footer .section_subtitle {
   color: var(--dark);
 }
 
