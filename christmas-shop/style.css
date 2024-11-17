@@ -131,9 +131,9 @@ main {
 }
 
 .hero {
-  background-image: url("assets/img/img-compressed/bg-ball.png");
-  background-size: 90%;
-  background-position: center top;
+  background-image: url("assets/img/img-compressed/bg-snow.png"), url("assets/img/img-compressed/bg-ball.png");
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px 20px 0 0;
   padding-top: 60px;
