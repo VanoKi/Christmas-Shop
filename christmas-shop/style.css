@@ -329,6 +329,14 @@ main {
 
 /* gifts */
 
+.gifts .section_subtitle {
+  margin-bottom: 12px;
+}
+
+.gifts .section__title {
+  margin-bottom: 20px;
+}
+
 .gifts {
   display: flex;
   flex-direction: column;
