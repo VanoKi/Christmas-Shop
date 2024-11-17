@@ -610,6 +610,12 @@ footer a p:hover {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
+  transition: .3s ease;
+}
+
+.tabs__item:hover {
+  border-radius: 12px;
+  background: var(--static-white-20);
 }
 
 .gift-section .container .gifts__wrap {
@@ -622,5 +628,13 @@ footer a p:hover {
   cursor: not-allowed;
   pointer-events: none;
   color: var(--primary);
+  border-radius: 12px;
+}
+
+.disabled__tab {
+  cursor: auto;
+  background: var(--static-white-20);
+  cursor: not-allowed;
+  pointer-events: none;
   border-radius: 12px;
 }
