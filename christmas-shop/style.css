@@ -28,7 +28,6 @@ html {
 body {
   margin: 0 auto;
   max-width: 1440px;
-  border: 1px solid lawngreen;
 }
 
 a {
@@ -47,7 +46,6 @@ img{
 .container {
   max-width: 1276px;
   margin: 0 auto;
-  border: 1px salmon solid;
 }
 
 /* header start */
@@ -63,19 +61,9 @@ img{
   transition: .3s ease;
 }
 
-/*.logo_wrap img, .logo_title {*/
-/*  display: inline-block;*/
-/*}*/
-
 .logo_wrap img {
   width: 24px;
   height: 24px;
-}
-
-.logo_wrap:hover {
-  background: rgba(6, 164, 79, 0.1);
-  border: 1px dashed var(--tag-green);
-  border-radius: 4px;
 }
 
 .logo_title {
@@ -362,4 +350,5 @@ main {
   border-radius: 20px;
   background: var(--static-white);
   height: 112px;
+  gap: 8px;
 }
