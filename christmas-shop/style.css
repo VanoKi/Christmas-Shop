@@ -615,3 +615,12 @@ footer a p:hover {
 .gift-section .container .gifts__wrap {
   flex-wrap: wrap;
 }
+
+.disabled__link {
+  cursor: auto;
+  background: var(--primary-10);
+  cursor: not-allowed;
+  pointer-events: none;
+  color: var(--primary);
+  border-radius: 12px;
+}
