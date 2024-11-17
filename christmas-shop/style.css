@@ -563,3 +563,13 @@ footer .section__subtitle {
 footer a p:hover {
   color: var(--primary);
 }
+
+.rss {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--dark);
+}
