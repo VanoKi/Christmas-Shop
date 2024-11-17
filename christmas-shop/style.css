@@ -48,6 +48,13 @@ img{
   margin: 0 auto;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/img/img-compressed/bg-snow.png");
+}
+
 /* header start */
 
 .logo_wrap {
@@ -352,3 +359,4 @@ main {
   height: 112px;
   gap: 8px;
 }
+
