@@ -450,6 +450,7 @@ main {
   text-align: center;
   color: var(--static-white);
   position: relative;
+  width: 80px;
 }
 
 .time-box:not(:last-child)::after {
@@ -463,6 +464,7 @@ main {
 }
 
 .time {
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 152%;
