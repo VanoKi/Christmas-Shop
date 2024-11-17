@@ -278,6 +278,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 20px;
 }
 
 .arrow {
@@ -287,5 +288,35 @@ main {
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.arrow__left {
+  rotate: 180deg;
+}
+
+.arrow:hover {
+  background: var(--static-white);
+}
+
+.arrow:hover svg path {
+  stroke: #ff4646;
+}
+
+.disabled {
+  border: 1px solid var(--static-white-40);
+  cursor: auto;
+  background: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* gifts */
+
+.gifts {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
