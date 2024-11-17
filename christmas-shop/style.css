@@ -379,13 +379,15 @@ main {
 }
 
 .gift__card-titles {
-  padding-top: 20px;
+  padding-top: 17px;
   padding-left: 20px;
   /*padding-bottom: 20px;*/
   border-radius: 20px;
   background: var(--static-white);
-  height: 112px;
-  gap: 8px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .card__for-work {
