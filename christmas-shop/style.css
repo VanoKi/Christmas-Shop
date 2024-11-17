@@ -182,7 +182,7 @@ main {
   text-align: center;
   color: var(--static-white);
   transition: .3s ease;
-  cursor: url("assets/cursor.jpg"), pointer;
+  cursor: pointer;
 }
 
 .main_btn:hover {
@@ -456,4 +456,22 @@ main {
 footer {
   padding: 60px 0;
 
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+footer .section__title, .section__subtitle {
+  color: var(--dark);
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--content-background);
+  border-radius: 20px;
 }
