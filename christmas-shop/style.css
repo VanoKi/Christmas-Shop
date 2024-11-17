@@ -319,4 +319,43 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url("assets/img/img-compressed/bg-snow.png");
+}
+
+.gifts__wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.gift__card {
+  width: 310px;
+  height: 342px;
+  border-radius: 20px;
+  background: var(--content-background);
+  color: var(--dark);
+}
+
+.gift__card-subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--tag-purple);
+}
+
+.gift__card-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.gift__card .gift__card-subtitle, .gift__card .gift__card-title {
+  padding-left: 20px;
 }
