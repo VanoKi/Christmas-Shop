@@ -495,7 +495,7 @@ footer {
   margin-bottom: 60px;
 }
 
-footer .section__title, .section__subtitle {
+footer .section__title, .section__subtitle, .section_subtitle {
   color: var(--dark);
 }
 
@@ -534,7 +534,7 @@ footer .section__subtitle {
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
 
 .social__container {
