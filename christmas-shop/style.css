@@ -643,3 +643,7 @@ footer a p:hover {
   pointer-events: none;
   border-radius: 12px;
 }
+
+main {
+  border-radius: 20px 20px 20px 20px;
+}
