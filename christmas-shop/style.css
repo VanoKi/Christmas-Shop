@@ -499,6 +499,14 @@ footer .section__title, .section__subtitle {
   color: var(--dark);
 }
 
+footer .section__subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 0.08em;
+}
+
 .footer__card {
   display: flex;
   flex: 1;
