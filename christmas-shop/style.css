@@ -356,6 +356,10 @@ main {
   color: var(--dark);
 }
 
-.gift__card .gift__card-subtitle, .gift__card .gift__card-title {
+.gift__card-titles {
+  padding-top: 20px;
   padding-left: 20px;
+  border-radius: 20px;
+  background: var(--static-white);
+  height: 112px;
 }
