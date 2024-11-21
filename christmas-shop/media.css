@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  .gifts__wrap {
-
+  .footer__first__container {
+    flex-direction: column;
   }
 }
