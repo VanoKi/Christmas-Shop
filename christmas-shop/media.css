@@ -4,6 +4,14 @@
     display: none;
   }
 
+  section {
+    padding: 0;
+  }
+
+  .about__inner-text {
+    padding: 46px 60px;
+  }
+
   .container {
     max-width: 752px;
   }
@@ -12,7 +20,12 @@
     padding: 60px;
   }
 
+  /*.cta {*/
+  /*  padding: 60px 0;*/
+  /*}*/
+
   .footer__first__container {
     flex-direction: column;
   }
+
 }

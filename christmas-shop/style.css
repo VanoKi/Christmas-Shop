@@ -221,7 +221,8 @@ main {
 
 .about__inner__img-wrap {
   border-radius: 20px;
-  background: url("assets/img/img-compressed/santa.png");
+  background: url("assets/img/img-compressed/santa.png")
+              center;
   width: 638px;
   height: 528px;
 }
