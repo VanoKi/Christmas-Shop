@@ -219,8 +219,11 @@ main {
   line-height: 148%;
 }
 
-.about__inner img {
+.about__inner__img-wrap {
   border-radius: 20px;
+  background: url("assets/img/img-compressed/santa.png");
+  width: 638px;
+  height: 528px;
 }
 
 .section_subtitle-about {
