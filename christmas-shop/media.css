@@ -1,4 +1,17 @@
 @media (max-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .container {
+    max-width: 752px;
+  }
+
+  .gifts__wrap {
+    padding: 60px;
+  }
+
   .footer__first__container {
     flex-direction: column;
   }
