@@ -64,3 +64,38 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 380px) {
+
+  .container {
+    max-width: 364px;
+  }
+
+  .about {
+    padding: 65px 0;
+  }
+
+  .about__inner {
+    flex-direction: column;
+  }
+
+  .about__inner-text {
+    padding: 60px 20px;
+  }
+
+  .about__inner__img-wrap {
+    width: 100%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .gifts {
+    padding: 60px 0;
+  }
+
+  .gifts__wrap {
+    padding: 0 0 0 0;
+  }
+}
