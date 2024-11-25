@@ -103,4 +103,17 @@
     padding: 0 0 0 0;
     flex-direction: column;
   }
+
+  .tabs {
+    gap: 0;
+    padding: 22px 0;
+  }
+
+  .tabs__item {
+    padding: 12px 8px;
+  }
+
+  .gift-section {
+    padding-bottom: 60px;
+  }
 }
