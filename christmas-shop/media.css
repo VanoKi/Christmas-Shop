@@ -56,6 +56,10 @@
     padding: 0 60px 60px 60px;
   }
 
+  .gift__card-titles {
+    gap: 10px;
+  }
+
   .footer__first__container {
     flex-direction: column;
   }
