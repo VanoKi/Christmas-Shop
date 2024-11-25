@@ -63,6 +63,12 @@
   }
 }
 
+@media (max-width: 772px) {
+  .gifts__wrap {
+    padding: 0 70px 60px 60px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .menu {
