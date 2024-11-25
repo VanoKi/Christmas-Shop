@@ -50,7 +50,7 @@ img{
 }
 
 section {
-  background-image: url("assets/img/img-compressed/bg-snow.png");
+  /*background-image: url("assets/img/img-compressed/bg-snow.png");*/
   padding: 60px 0;
 }
 
@@ -96,6 +96,10 @@ header .container {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--dark);
+}
+
+.burger-wrap {
+  display: none;
 }
 
 .menu {
@@ -192,7 +196,10 @@ main {
 
 .about {
   padding: 60px 0;
-  background: url("assets/img/img-compressed/bg-snow.png");
+  background-image: url("assets/img/img-compressed/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about__inner {
@@ -219,8 +226,12 @@ main {
   line-height: 148%;
 }
 
-.about__inner img {
+.about__inner__img-wrap {
   border-radius: 20px;
+  background: url("assets/img/img-compressed/santa.png")
+              center;
+  width: 638px;
+  height: 528px;
 }
 
 .section_subtitle-about {
@@ -253,7 +264,10 @@ main {
 /* slider */
 
 .slider {
-  background: url("assets/img/img-compressed/bg-snow.png");
+  background-image: url("assets/img/img-compressed/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,12 +356,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("assets/img/img-compressed/bg-snow.png");
+  background-image: url("assets/img/img-compressed/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .gifts__wrap {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -579,10 +597,10 @@ footer a p:hover {
 
 .gift-section__header {
   background-image: url("assets/img/img-compressed/bg-garland.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 60px;
+  padding-top: 58px;
   padding-bottom: 0;
 }
 
@@ -596,6 +614,7 @@ footer a p:hover {
 .tabs {
   margin: 0 auto;
   display: flex;
+  gap: 8px;
   padding: 20px 0;
 }
 

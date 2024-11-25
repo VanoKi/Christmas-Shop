@@ -14,20 +14,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
   <header>
 
     <div class="container">
 
-        <a href="index.html" class="logo_wrap">
+      <a href="index.html" class="logo_wrap">
           <img src="assets/logo.svg" alt="logo">
           <p class="logo_title">
             The gifts
           </p>
         </a>
 
-        <nav>
+      <nav>
           <ul class="menu">
             <li><a href="gifts.html">gifts</a></li>
             <li><a href="#about">about</a></li>
@@ -35,6 +36,11 @@
             <li><a href="#contacts">contacts</a></li>
           </ul>
         </nav>
+
+      <div class="burger-wrap">
+        <div class="burger-icon">
+        </div>
+      </div>
 
     </div>
 
@@ -53,14 +59,15 @@
         <div class="about__inner-text">
           <h2 class="section_subtitle section_subtitle-about">About</h2>
           <p class="section__title section__title-about">
-            Unleash your inner<br> superhero!</p>
+            Unleash your inner<br class="mobile"> superhero!</p>
           <p class="about__inner-description">
             This New Year marks the beginning
-            of your journey <br> to inner harmony and
-            new strengths. We offer <br> unique gifts
+            of your journey <br class="mobile"> to inner harmony and
+            new strengths. We offer <br class="mobile"> unique gifts
             that will help you improve your life.</p>
         </div>
-        <img src="assets/img/img-compressed/santa.png" alt="santa">
+        <div class='about__inner__img-wrap'>
+        </div>
       </div>
     </section>
     <section class="slider">
