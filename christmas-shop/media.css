@@ -5,11 +5,22 @@
   }
 
   .burger-icon {
-    display: block;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     position: relative;
     width: 22px;
     height: 2px;
-    background-color: #181C29;
+    background-color: var(--dark);
+  }
+
+  .burger-icon::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: var(--dark);
+    top: 8px;
   }
 
   section {
