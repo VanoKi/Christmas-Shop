@@ -98,7 +98,7 @@ header .container {
   color: var(--dark);
 }
 
-.burger-icon {
+.burger-wrap {
   display: none;
 }
 

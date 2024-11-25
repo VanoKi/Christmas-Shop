@@ -4,14 +4,23 @@
     display: none;
   }
 
+  .burger-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
   .burger-icon {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     position: relative;
     width: 22px;
     height: 2px;
     background-color: var(--dark);
+
+    margin: 8px;
   }
 
   .burger-icon::after {
@@ -33,6 +42,14 @@
 
   .container {
     max-width: 752px;
+  }
+
+  header .container {
+    padding: 10px 0;
+  }
+
+  .slider {
+    padding: 60px 0;
   }
 
   .gifts__wrap {
