@@ -98,6 +98,10 @@ header .container {
   color: var(--dark);
 }
 
+.burger-icon {
+  display: none;
+}
+
 .menu {
   display: flex;
   text-transform: uppercase;

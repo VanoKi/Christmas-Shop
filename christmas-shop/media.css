@@ -4,6 +4,14 @@
     display: none;
   }
 
+  .burger-icon {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 2px;
+    background-color: #181C29;
+  }
+
   section {
     padding: 0;
   }
@@ -20,12 +28,7 @@
     padding: 60px;
   }
 
-  /*.cta {*/
-  /*  padding: 60px 0;*/
-  /*}*/
-
   .footer__first__container {
     flex-direction: column;
   }
-
 }
