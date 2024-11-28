@@ -14,7 +14,7 @@
   }
 }
 
-@media (hover: none) {
+@media (hover: hover) {
   .logo_wrap {
     cursor: default;
   }
@@ -150,6 +150,10 @@
     flex-direction: column;
   }
 
+  .about__inner-text  {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 630px) {
@@ -165,7 +169,7 @@
   }
 
   .about {
-    padding: 65px 0;
+    padding: 60px 0;
   }
 
   .about__inner-text {
@@ -185,7 +189,7 @@
   }
 
   .gifts {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .tabs {
@@ -199,5 +203,13 @@
 
   .gift-section {
     padding-bottom: 60px;
+  }
+
+  .cta {
+    padding: 114px 0;
+  }
+
+  footer {
+    padding: 68px 0;
   }
 }
