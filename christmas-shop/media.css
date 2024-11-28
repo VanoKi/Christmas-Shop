@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px;
+    height: 36px;
     cursor: pointer;
   }
 
@@ -49,11 +49,20 @@
   }
 
   section {
-    padding: 0;
+    padding: 60px 0 0 0;
+  }
+
+  .main_btn {
+    margin-top: 5px;
   }
 
   .about__inner-text {
+    width: 73%;
     padding: 46px 60px;
+  }
+
+  .mobile {
+    display: none;
   }
 
   .about__inner__img-wrap {
@@ -77,7 +86,11 @@
   }
 
   .gift__card-titles {
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .cta .main_btn {
+    margin-top: -2px;
   }
 }
 
