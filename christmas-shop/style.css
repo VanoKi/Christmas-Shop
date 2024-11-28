@@ -400,13 +400,12 @@ main {
 .gift__card-titles {
   padding-top: 17px;
   padding-left: 20px;
-  /*padding-bottom: 20px;*/
   border-radius: 20px;
   background: var(--static-white);
   height: 108px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 
 .card__for-work {
@@ -456,7 +455,7 @@ main {
   width: 344px;
   height: 72px;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -493,6 +492,7 @@ main {
 }
 
 .label {
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
