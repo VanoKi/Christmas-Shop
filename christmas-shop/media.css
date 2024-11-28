@@ -15,8 +15,44 @@
 }
 
 @media (hover: none) {
-  a:hover {
-    pointer-events: none;
+  .logo_wrap {
+    cursor: default;
+  }
+
+  .gift__card,
+  .social__container,
+  .footer__card,
+  .tabs__item,
+  .main_btn {
+    transition: none;
+    cursor: default;
+  }
+
+  .menu a {
+    color: currentColor;
+    background-color: inherit;
+  }
+
+  .main_btn:hover {
+    color: currentColor;
+    background-color: var(--dark);
+  }
+
+  .gift__card:hover {
+    color: var(--dark);
+  }
+
+  .tabs__item:hover {
+    color: currentColor;
+    background-color: inherit
+  }
+
+  .social__container:hover {
+    filter: none;
+  }
+
+  .footer__link:hover {
+    color: var(--dark);
   }
 }
 
@@ -97,6 +133,10 @@
 
   .cta .main_btn {
     margin-top: -2px;
+  }
+
+  .gift-section__header {
+    padding-top: 62px;
   }
 }
 
