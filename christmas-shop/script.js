@@ -1,6 +1,6 @@
 
 function countdown() {
-    let now = new Date()
+    let now = Date.now()
     let newYear = new Date(2025, 0, 1)
     let diff = newYear - now
     const days = Math.floor(diff / (1000 * 60 * 60 * 24))
