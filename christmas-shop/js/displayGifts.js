@@ -20,5 +20,5 @@ export async function displayGifts(amount, destination, gifts) {
         </div>
         `
     }
-    destination.innerHTML += block
+    destination.innerHTML = block
 }

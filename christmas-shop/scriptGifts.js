@@ -11,7 +11,11 @@ document.querySelectorAll('.tabs__item').forEach((tab) => {
         document.querySelector('.tabs__item.disabled__tab').classList.remove('disabled__tab')
         tab.classList.add('disabled__tab')
         console.log(tab.innerHTML)
-        // gifts = gifts.filter((item)=> item.category === tab.inner)
-        // displayGifts()
+        if (tab.innerHTML !== 'all') {
+            let changedGifts = gifts.filter((item)=> item.category.toLowerCase() === tab.innerHTML)
+            displayGifts(changedGifts.length, destination, changedGifts)
+        } else {
+            displayGifts(gifts.length, destination, gifts)
+        }
     })
 })
