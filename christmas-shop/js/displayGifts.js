@@ -4,12 +4,12 @@ async function getGifts() {
     return data
 }
 
-export async function displayGifts() {
+export async function displayGifts(amount, destination) {
     let block = ``
     let gifts = await getGifts()
-    gifts = gifts.sort(() => .5  - Math.random()).slice(0, 4)
+    gifts = gifts.sort(() => .5  - Math.random()).slice(0, amount)
     for (let i = 0; i < gifts.length; i++) {
-        // console.log(gifts[i].category.split(' ')[1].toLowerCase())
+        console.log(gifts[i].name)
         block += `
             <div class="gift__card">
           <img src="assets/img/img-compressed/gift-for-${gifts[i].category.split(' ')[1].toLowerCase()}.png" alt="gift-for-work">
@@ -20,5 +20,5 @@ export async function displayGifts() {
         </div>
         `
     }
-    document.querySelector('.gifts__wrap').innerHTML += block
+    destination.innerHTML += block
 }
