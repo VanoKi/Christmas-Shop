@@ -23,8 +23,3 @@ document.querySelectorAll('.tabs__item').forEach((tab) => {
     })
 })
 
-// document.querySelectorAll('.gift__card').forEach( (card) => {
-//     card.addEventListener('click', (event) => {
-//         console.log(card.innerHTML)
-//     })
-// })
