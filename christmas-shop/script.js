@@ -1,6 +1,9 @@
 import {countdown} from "./js/timer.js";
 import {displayGifts} from "./js/displayGifts.js";
+import {getGifts} from "./js/displayGifts.js";
 
 setInterval( countdown, 1000)
-displayGifts(4, document.querySelector('.gifts__wrap'))
+const gifts = await getGifts()
+const destination = document.querySelector('.gifts__wrap')
+displayGifts(4, destination, gifts)
 
