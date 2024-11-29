@@ -14,45 +14,46 @@
   }
 }
 
-@media (hover: hover) {
-  .logo_wrap {
-    cursor: default;
-  }
-
-  .gift__card,
-  .social__container,
-  .footer__card,
-  .tabs__item,
-  .main_btn {
-    transition: none;
-    cursor: default;
-  }
-
-  .menu a {
-    color: currentColor;
-    background-color: inherit;
+@media (hover: hover) and (pointer: fine) {
+  .menu a:hover {
+    border-radius: 12px;
+    background: var(--primary-10);
+    color: var(--primary);
   }
 
   .main_btn:hover {
-    color: currentColor;
-    background-color: var(--dark);
+    background: var(--static-white);
+    border: var(--static-white);
+    color: var(--dark);
   }
 
-  .gift__card:hover {
-    color: var(--dark);
+  .arrow:hover {
+    background: var(--static-white);
+  }
+
+  .arrow:hover svg path {
+    stroke: #ff4646;
+  }
+
+  .gift__card:hover h3 {
+    color: var(--primary);
+  }
+
+  .footer__card:hover p {
+    color: var(--primary);
+  }
+
+  .social__container:hover svg path {
+    stroke: #ff4646;
+  }
+
+  footer a p:hover {
+    color: var(--primary);
   }
 
   .tabs__item:hover {
-    color: currentColor;
-    background-color: inherit
-  }
-
-  .social__container:hover {
-    filter: none;
-  }
-
-  .footer__link:hover {
-    color: var(--dark);
+    border-radius: 12px;
+    background: var(--static-white-20);
   }
 }
 
