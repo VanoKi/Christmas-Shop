@@ -12,7 +12,11 @@ async function getGifts() {
 
 async function displayGifts() {
     let gifts = await getGifts()
-    console.log(gifts)
+    gifts = gifts.sort(() => .5  - Math.random())
+    for (let i = 0; i < gifts.length; i++) {
+        console.log(gifts[i].name)
+        // console.log(gifts[i].category)
+    }
 }
 
 displayGifts()
