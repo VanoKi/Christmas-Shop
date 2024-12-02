@@ -1,8 +1,6 @@
 import {getGifts} from "./displayGifts.js";
 const gifts = await getGifts()
 const body = document.querySelector('body')
-const close = document.querySelector('.close__modal')
-const modalContainer = document.querySelector('.modal__container')
 
 export function clickOnCard() {
     document.querySelectorAll('.gift__card').forEach( (card) => {
@@ -121,19 +119,19 @@ export function clickOnCard() {
       </div>
     </section>
                     `)
-                    // function closeModal() {
-                    //     body.classList.remove('no-scroll')
-                    //     modalContainer.remove()
-                    // }
 
-                    document.querySelector('.close__modal').addEventListener('click', () => {
+                    const close = document.querySelector('.close__modal')
+                    const modalContainer = document.querySelector('.modal__container')
+
+                    function closeModal() {
                         body.classList.remove('no-scroll')
-                        document.querySelector('.modal__container').remove()
-                    })
-                    document.querySelector('.modal__container').addEventListener('click', (e) => {
+                        modalContainer.remove()
+                    }
+
+                    close.addEventListener('click', closeModal)
+                    modalContainer.addEventListener('click', (e) => {
                         if (e.target === modalContainer) {
-                            body.classList.remove('no-scroll')
-                            document.querySelector('.modal__container').remove()
+                            closeModal()
                         }
                     })
                 }
