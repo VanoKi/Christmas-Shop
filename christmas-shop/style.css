@@ -731,5 +731,6 @@ main {
 }
 
 .star__active path {
-  fill: #FF4646;
+  fill-opacity: 1 !important;
 }
+
