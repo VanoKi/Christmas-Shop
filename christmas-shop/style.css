@@ -733,7 +733,7 @@ main {
   gap: 9px;
 }
 
-.star__active path {
+.star__active path{
   fill-opacity: 1 !important;
 }
 
