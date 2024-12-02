@@ -755,16 +755,19 @@ main {
 .close__modal::after {
   content: '';
   position: absolute;
-  display: block;
+  /*display: block;*/
+  top: 50%;
+  left: 50%;
   width: 22px;
   height: 2px;
   background: var(--dark);
+  transform-origin: center;
 }
 
 .close__modal::before {
-  transform: rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .close__modal::after {
-  transform: rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
