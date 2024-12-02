@@ -688,6 +688,7 @@ main {
 
 .modal__card-titles {
   height: auto;
+  padding-bottom: 20px;
 }
 
 .modal__description {
@@ -734,3 +735,6 @@ main {
   fill-opacity: 1 !important;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
