@@ -16,7 +16,7 @@ export function clickOnCard(place) {
       <div class="modal">
           <img src="assets/img/img-compressed/gift-for-${gifts[i].category.split(' ')[1].toLowerCase()}.png" alt="gift-for-work">
           <div class="gift__card-titles modal__card-titles">
-            <p class="gift__card-subtitle card__for-work">${gifts[i].category}</p>
+            <p class="gift__card-subtitle card__for-${gifts[i].category.split(' ')[1].toLowerCase()}">${gifts[i].category}</p>
             <h3 class="gift__card-title">${gifts[i].name}</h3>
             <p class="modal__description">
               ${gifts[i].description}
