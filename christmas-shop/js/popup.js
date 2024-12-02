@@ -120,20 +120,19 @@ export function clickOnCard() {
     </section>
                     `)
 
-                    const maxRating = +gifts[i].superpowers.live/100
-                    console.log(maxRating)
-                    const rating = document.querySelector('#live')
-                    const stars = rating.querySelectorAll('svg')
-                    console.log(stars)
-                    function renderRating(maxRating) {
+                    function renderRating(maxRating, purpose) {
                         for (let j = 0; j < maxRating; j++) {
-                            stars[j].classList.add('star__active', 'path')
+                            purpose[j].classList.add('star__active', 'path')
                         }
-                        return stars
                     }
 
-                    console.log(renderRating(maxRating))
+                    renderRating(+gifts[i].superpowers.live/100, document.querySelector('#live').querySelectorAll('svg'))
 
+                    renderRating(+gifts[i].superpowers.create/100, document.querySelector('#create').querySelectorAll('svg'))
+
+                    renderRating(+gifts[i].superpowers.love/100, document.querySelector('#love').querySelectorAll('svg'))
+
+                    renderRating(+gifts[i].superpowers.dream/100, document.querySelector('#dream').querySelectorAll('svg'))
 
                     const close = document.querySelector('.close__modal')
                     const modalContainer = document.querySelector('.modal__container')
