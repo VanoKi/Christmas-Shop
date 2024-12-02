@@ -711,6 +711,9 @@ main {
 .modal__rating__item {
   display: flex;
   gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
 }
 
 .modal__rating__item__title {
@@ -725,4 +728,8 @@ main {
 .rating {
   display: flex;
   gap: 9px;
+}
+
+.star__active path {
+  fill: #FF4646;
 }
