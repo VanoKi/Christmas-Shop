@@ -14,6 +14,7 @@ export function clickOnCard(place) {
                     place.insertAdjacentHTML('afterbegin', `
                     <section class="modal__container">
       <div class="modal">
+          <div class="close__modal"></div>
           <img src="assets/img/img-compressed/gift-for-${gifts[i].category.split(' ')[1].toLowerCase()}.png" alt="gift-for-work">
           <div class="gift__card-titles modal__card-titles">
             <p class="gift__card-subtitle card__for-${gifts[i].category.split(' ')[1].toLowerCase()}">${gifts[i].category}</p>

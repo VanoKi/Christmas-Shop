@@ -680,9 +680,7 @@ main {
 }
 
 .modal {
-  /*position: absolute;*/
-  /*margin: auto;*/
-  /*transform: translate(-50%, 0);*/
+  position: absolute;
   max-width: 400px;
   border-radius: 20px;
   background: var(--content-background);
@@ -741,4 +739,32 @@ main {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.close__modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: opacity ease .4s;
+}
+
+.close__modal::before,
+.close__modal::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--dark);
+}
+
+.close__modal::before {
+  transform: rotate(45deg);
+}
+
+.close__modal::after {
+  transform: rotate(-45deg);
 }
