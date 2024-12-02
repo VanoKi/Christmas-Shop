@@ -4,9 +4,10 @@ import {clickOnCard} from "./js/popup.js";
 
 const gifts = await getGifts()
 const destination = document.querySelector('#gifts')
+const place = document.querySelector('body')
 
 displayGifts(gifts.length, destination, gifts)
-clickOnCard()
+clickOnCard(place)
 
 //tabs
 document.querySelectorAll('.tabs__item').forEach((tab) => {

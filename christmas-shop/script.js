@@ -6,6 +6,8 @@ import {clickOnCard} from "./js/popup.js";
 setInterval( countdown, 1000)
 const gifts = await getGifts()
 const destination = document.querySelector('.gifts__wrap')
+const place = document.querySelector('body')
+
 displayGifts(4, destination, gifts)
-clickOnCard()
+clickOnCard(place)
 

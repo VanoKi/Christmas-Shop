@@ -667,17 +667,17 @@ main {
 
 .modal__container {
   background: var(--overlay);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*z-index: 1;*/
+  z-index: 1;
 }
 
 .modal {
-  position: absolute;
+  /*position: absolute;*/
   /*margin: auto;*/
   /*transform: translate(-50%, 0);*/
   max-width: 400px;
