@@ -8,7 +8,7 @@ const destination = document.querySelector('#gifts')
 displayGifts(gifts.length, destination, gifts)
 clickOnCard()
 
-
+//tabs
 document.querySelectorAll('.tabs__item').forEach((tab) => {
     tab.addEventListener('click', () => {
         document.querySelector('.tabs__item.disabled__tab').classList.remove('disabled__tab')
