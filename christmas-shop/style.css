@@ -678,9 +678,17 @@ main {
 
 .modal {
   position: absolute;
-  margin: auto;
+  /*margin: auto;*/
   /*transform: translate(-50%, 0);*/
   max-width: 400px;
   border-radius: 20px;
   background: var(--content-background);
+}
+
+.modal__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: var(--dark);
 }
