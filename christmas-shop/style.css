@@ -12,6 +12,7 @@
   --font-family: "Montserrat", sans-serif;
   --second-family: "Allura", sans-serif;
   --third-family: "SF Pro", sans-serif;
+  --overlay: rgba(24, 28, 41, 0.8)
 }
 
 html {
@@ -660,4 +661,113 @@ footer a p:hover {
 
 main {
   border-radius: 20px 20px 20px 20px;
+}
+
+/* modal */
+
+.modal__container {
+  background: var(--overlay);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  position: absolute;
+  max-width: 400px;
+  border-radius: 20px;
+  background: var(--content-background);
+  color: var(--dark);
+}
+
+.modal__card-titles {
+  height: auto;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.modal__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: var(--dark);
+}
+
+.modal__stars-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.modal__rating__item {
+  display: flex;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.modal__rating__item__title {
+  width: 184px;
+  text-align: left;
+}
+
+.modal__rating__item__grade {
+  width: 40px;
+}
+
+.rating {
+  display: flex;
+  gap: 9px;
+}
+
+.star__active path{
+  fill-opacity: 1 !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.close__modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: opacity ease .4s;
+}
+
+.close__modal::before,
+.close__modal::after {
+  content: '';
+  position: absolute;
+  /*display: block;*/
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 2px;
+  background: var(--dark);
+  transform-origin: center;
+}
+
+.close__modal::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close__modal::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
