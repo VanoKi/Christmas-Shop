@@ -12,7 +12,7 @@ export function clickOnCard() {
             for (let i = 0; i < gifts.length; i++) {
                 if (clickedCard === gifts[i].name) {
                     // console.log(gifts[i])
-                    body.classList.toggle('no-scroll')
+                    body.classList.add('no-scroll')
                     body.insertAdjacentHTML('afterbegin', `
                     <section class="modal__container">
       <div class="modal">
@@ -121,21 +121,24 @@ export function clickOnCard() {
       </div>
     </section>
                     `)
+                    // function closeModal() {
+                    //     body.classList.remove('no-scroll')
+                    //     modalContainer.remove()
+                    // }
+
+                    document.querySelector('.close__modal').addEventListener('click', () => {
+                        body.classList.remove('no-scroll')
+                        document.querySelector('.modal__container').remove()
+                    })
+                    document.querySelector('.modal__container').addEventListener('click', (e) => {
+                        if (e.target === modalContainer) {
+                            body.classList.remove('no-scroll')
+                            document.querySelector('.modal__container').remove()
+                        }
+                    })
                 }
             }
         })
-
-        // export function closeModal() {
-        //     body.classList.toggle('no-scroll')
-        //     modalContainer.remove()
-        // }
-        //
-        // close.addEventListener('click', closeModal)
-        // modalContainer.addEventListener('click', (e) => {
-        //     if (e.target === modalContainer) {
-        //         closeModal()
-        //     }
-        // })
     })
 }
 
