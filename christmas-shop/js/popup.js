@@ -1,8 +1,10 @@
 import {getGifts} from "./displayGifts.js";
 const gifts = await getGifts()
 const body = document.querySelector('body')
+const close = document.querySelector('.close__modal')
+const modalContainer = document.querySelector('.modal__container')
 
-export function clickOnCard(place) {
+export function clickOnCard() {
     document.querySelectorAll('.gift__card').forEach( (card) => {
         card.addEventListener('click', (event) => {
             let clickedCard = card.querySelector('h3').textContent
@@ -11,7 +13,7 @@ export function clickOnCard(place) {
                 if (clickedCard === gifts[i].name) {
                     // console.log(gifts[i])
                     body.classList.toggle('no-scroll')
-                    place.insertAdjacentHTML('afterbegin', `
+                    body.insertAdjacentHTML('afterbegin', `
                     <section class="modal__container">
       <div class="modal">
           <div class="close__modal"></div>
@@ -122,6 +124,19 @@ export function clickOnCard(place) {
                 }
             }
         })
+
+        // export function closeModal() {
+        //     body.classList.toggle('no-scroll')
+        //     modalContainer.remove()
+        // }
+        //
+        // close.addEventListener('click', closeModal)
+        // modalContainer.addEventListener('click', (e) => {
+        //     if (e.target === modalContainer) {
+        //         closeModal()
+        //     }
+        // })
     })
 }
+
 
