@@ -86,7 +86,7 @@
   }
 
   .burger__close {
-    
+
   }
 
   .menu {
@@ -112,6 +112,7 @@
     margin: 8px;
   }
 
+  .burger-icon::before,
   .burger-icon::after {
     content: '';
     position: absolute;
@@ -119,6 +120,18 @@
     height: 2px;
     background-color: var(--dark);
     top: 8px;
+  }
+
+  .burger-icon.active{
+    background-color: transparent;
+  }
+
+  .burger-icon.active::before{
+    transform: rotate(45deg);
+  }
+
+  .burger-icon.active::after{
+    transform: rotate(-45deg);
   }
 
   section {
