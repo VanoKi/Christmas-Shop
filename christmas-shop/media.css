@@ -66,6 +66,16 @@
     color: var(--dark);
     justify-content: center;
     align-items: center;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    background: var(--static-white);
+    position: absolute;
+    z-index: 1;
   }
 
   .burger__menu .menu {
@@ -73,6 +83,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .burger__close {
+    
   }
 
   .menu {
