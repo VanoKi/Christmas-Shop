@@ -17,8 +17,10 @@ document.querySelectorAll('.tabs__item').forEach((tab) => {
         if (tab.innerHTML !== 'all') {
             let changedGifts = gifts.filter((item)=> item.category.toLowerCase() === tab.innerHTML)
             displayGifts(changedGifts.length, destination, changedGifts)
+            clickOnCard()
         } else {
             displayGifts(gifts.length, destination, gifts)
+            clickOnCard()
         }
     })
 })
