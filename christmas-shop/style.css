@@ -103,6 +103,10 @@ header .container {
   display: none;
 }
 
+.burger__menu {
+  display: none;
+}
+
 .menu {
   display: flex;
   text-transform: uppercase;

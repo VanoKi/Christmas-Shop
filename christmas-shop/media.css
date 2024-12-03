@@ -59,6 +59,22 @@
 
 @media (max-width: 768px) {
 
+  .burger__menu {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: var(--dark);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger__menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu {
     display: none;
   }
