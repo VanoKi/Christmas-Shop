@@ -74,7 +74,7 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     background: var(--static-white);
-    position: absolute;
+    position: relative;
     z-index: 1;
   }
 
