@@ -684,11 +684,24 @@ main {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   max-width: 400px;
   border-radius: 20px;
   background: var(--content-background);
   color: var(--dark);
+  
+  animation-name: animateModal;
+  animation-duration: .4s;
+}
+
+@keyframes animateModal {
+  from {
+    left: -300px;
+    opacity: 0;
+  } to {
+    left: 0;
+    opacity: 1;
+      }
 }
 
 .modal__card-titles {
