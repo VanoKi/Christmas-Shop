@@ -23,7 +23,7 @@ export function showBurger() {
               <nav>
                 <ul class="menu">
                   <li><a href="gifts.html">gifts</a></li>
-                  <li><a href="#about">about</a></li>
+                  <li><a href="index.html#about">about</a></li>
                   <li><a href="#gifts">best</a></li>
                   <li><a href="#contacts">contacts</a></li>
                 </ul>
