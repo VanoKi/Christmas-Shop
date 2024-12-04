@@ -3,21 +3,11 @@ export function showBurger() {
     const destiny = document.querySelector('header')
     const body = document.querySelector('body')
 
-    //         // const menuLinks = document.querySelectorAll('.burger__menu a')
-    //         // menuLinks.forEach( link => {
-    //         //     link.addEventListener('click', () => {
-    //         //         closeBurgerMenu()
-    //         //     })
-
     burgerIcon.addEventListener('click', () => {
         if(burgerIcon.classList.contains('active')){
-            // console.log(burgerIcon.classList.contains('active'))
-            // function closeBurgerMenu() {
-                document.querySelector('.burger__menu').remove()
-                document.querySelector('.burger-icon').classList.remove('active');
-                document.querySelector('body').classList.remove('no-scroll');
-            // }
-            // document.querySelector('.burger-icon').addEventListener('click', closeBurgerMenu)
+            document.querySelector('.burger__menu').remove()
+            document.querySelector('.burger-icon').classList.remove('active');
+            document.querySelector('body').classList.remove('no-scroll');
         } else {
             burgerIcon.classList.add('active')
             body.classList.add('no-scroll')
@@ -34,6 +24,13 @@ export function showBurger() {
                 </div>
             `)
         }
+        const menuLinks = document.querySelectorAll('.burger__menu a')
+        menuLinks.forEach( link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.burger__menu').remove()
+                document.querySelector('.burger-icon').classList.remove('active');
+                document.querySelector('body').classList.remove('no-scroll');
+            })
+            })
     })
-
 }
