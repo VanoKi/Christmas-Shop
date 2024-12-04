@@ -76,6 +76,19 @@
     background: var(--static-white);
     position: relative;
     z-index: 1;
+
+    animation-name: animateright;
+    animation-duration: .7s;
+  }
+
+  @keyframes animateright {
+    from {
+      right: -300px;
+      opacity: 0;
+    } to {
+    right: 0;
+    opacity: 1;
+          }
   }
 
   .burger__menu .menu {
@@ -83,10 +96,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .burger__close {
-
   }
 
   .menu {
