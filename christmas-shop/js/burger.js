@@ -4,33 +4,50 @@ export function showBurger() {
     const body = document.querySelector('body')
 
     burgerIcon.addEventListener('click', () => {
-        if(burgerIcon.classList.contains('active')){
-            document.querySelector('.burger__menu').remove()
-            document.querySelector('.burger-icon').classList.remove('active');
-            document.querySelector('body').classList.remove('no-scroll');
+        const burgerMenu = document.querySelector('.burger__menu');
+        if (burgerIcon.classList.contains('active')) {
+            burgerIcon.classList.remove('active');
+            body.classList.remove('no-scroll');
+
+            if (burgerMenu) {
+                burgerMenu.classList.remove('active');
+                burgerMenu.addEventListener('transitionend', () => {
+                    burgerMenu.remove();
+                }, { once: true });
+            }
         } else {
-            burgerIcon.classList.add('active')
-            body.classList.add('no-scroll')
+            burgerIcon.classList.add('active');
+            body.classList.add('no-scroll');
             destiny.insertAdjacentHTML("beforeend", `
-                <div class="burger__menu">
-                  <nav>
-                    <ul class="menu">
-                      <li><a href="gifts.html">gifts</a></li>
-                      <li><a href="#about">about</a></li>
-                      <li><a href="#gifts">best</a></li>
-                      <li><a href="#contacts">contacts</a></li>
-                    </ul>
-                  </nav>
-                </div>
-            `)
+            <div class="burger__menu">
+              <nav>
+                <ul class="menu">
+                  <li><a href="gifts.html">gifts</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#gifts">best</a></li>
+                  <li><a href="#contacts">contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+        `);
+            const burgerMenu = document.querySelector('.burger__menu')
+            setTimeout(burgerMenu.classList.add('active'), 500)
+
+            const menuLinks = document.querySelectorAll('.burger__menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    burgerIcon.classList.remove('active');
+                    body.classList.remove('no-scroll');
+
+                    const burgerMenu = document.querySelector('.burger__menu');
+                    if (burgerMenu) {
+                        burgerMenu.classList.remove('active');
+                        burgerMenu.addEventListener('transitionend', () => {
+                            burgerMenu.remove();
+                        }, { once: true });
+                    }
+                });
+            });
         }
-        const menuLinks = document.querySelectorAll('.burger__menu a')
-        menuLinks.forEach( link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.burger__menu').remove()
-                document.querySelector('.burger-icon').classList.remove('active');
-                document.querySelector('body').classList.remove('no-scroll');
-            })
-            })
-    })
-}
+    });
+    }

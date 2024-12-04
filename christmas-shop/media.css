@@ -74,22 +74,33 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     background: var(--static-white);
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
+    top: 62px;
+    right: -100%;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*right: 0;*/
     z-index: 1;
 
-    animation-name: animateright;
-    animation-duration: .7s;
+    /*animation-name: animateright;*/
+    /*animation-duration: .7s;*/
+
+    transition: right .5s ease;
+    /*transition: transform .5s ease, opacity .5s ease;*/
+    /*transform: translateX(100%);*/
+    /*opacity: 0;*/
   }
 
-  @keyframes animateright {
-    from {
-      right: -300px;
-      opacity: 0;
-    } to {
-    right: 0;
-    opacity: 1;
-          }
-  }
+  /*@keyframes animateright {*/
+  /*  from {*/
+  /*    right: -300px;*/
+  /*    opacity: 0;*/
+  /*  } to {*/
+  /*  right: 0;*/
+  /*  opacity: 1;*/
+  /*        }*/
+  /*}*/
 
   .burger__menu .menu {
     display: flex;
@@ -134,6 +145,12 @@
 
   .burger-icon.active{
     background-color: transparent;
+    /*transform: translateX(0);*/
+    /*opacity: 1;*/
+  }
+
+  .burger__menu.active {
+    right: 0;
   }
 
   .burger-icon.active::before{
