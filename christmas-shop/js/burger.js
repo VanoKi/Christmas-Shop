@@ -1,44 +1,39 @@
 export function showBurger() {
-    const burgerIcon = document.querySelector('.burger-wrap')
+    const burgerIcon = document.querySelector('.burger-icon')
     const destiny = document.querySelector('header')
     const body = document.querySelector('body')
-    const burgerMenu = document.querySelector('.burger__menu')
+
+    //         // const menuLinks = document.querySelectorAll('.burger__menu a')
+    //         // menuLinks.forEach( link => {
+    //         //     link.addEventListener('click', () => {
+    //         //         closeBurgerMenu()
+    //         //     })
 
     burgerIcon.addEventListener('click', () => {
-        if (burgerMenu) {
-            burgerMenu.remove()
-            document.querySelector('.burger-icon').classList.remove('active')
+        if(burgerIcon.classList.contains('active')){
+            // console.log(burgerIcon.classList.contains('active'))
+            // function closeBurgerMenu() {
+                document.querySelector('.burger__menu').remove()
+                document.querySelector('.burger-icon').classList.remove('active');
+                document.querySelector('body').classList.remove('no-scroll');
+            // }
+            // document.querySelector('.burger-icon').addEventListener('click', closeBurgerMenu)
         } else {
-            document.querySelector('.burger-icon').classList.toggle('active')
+            burgerIcon.classList.add('active')
             body.classList.add('no-scroll')
             destiny.insertAdjacentHTML("beforeend", `
-            <div class="burger__menu">
-              <nav>
-                <ul class="menu">
-                  <li><a href="gifts.html">gifts</a></li>
-                  <li><a href="#about">about</a></li>
-                  <li><a href="#gifts">best</a></li>
-                  <li><a href="#contacts">contacts</a></li>
-                </ul>
-              </nav>
-            </div>
-        `)
-
-            const menuLinks = document.querySelectorAll('.burger__menu a')
-            menuLinks.forEach( link => {
-                link.addEventListener('click', () => {
-                    closeBurgerMenu()
-                })
-            })
+                <div class="burger__menu">
+                  <nav>
+                    <ul class="menu">
+                      <li><a href="gifts.html">gifts</a></li>
+                      <li><a href="#about">about</a></li>
+                      <li><a href="#gifts">best</a></li>
+                      <li><a href="#contacts">contacts</a></li>
+                    </ul>
+                  </nav>
+                </div>
+            `)
         }
     })
 
-    function closeBurgerMenu() {
-        const burgerMenu = document.querySelector('.burger__menu')
-        if (burgerMenu) {
-            burgerMenu.remove()
-            document.querySelector('.burger-icon').classList.remove('active');
-            document.querySelector('body').classList.remove('no-scroll');
-        }
-    }
 }

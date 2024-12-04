@@ -96,6 +96,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 109px;
   }
 
   .menu {
@@ -107,7 +108,7 @@
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 36px;
+    height: 30px;
     cursor: pointer;
   }
 
