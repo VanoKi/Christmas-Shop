@@ -1,12 +1,14 @@
 import {displayGifts} from "./js/displayGifts.js";
 import {getGifts} from "./js/displayGifts.js";
 import {clickOnCard} from "./js/popup.js";
+import {showBurger} from "./js/burger.js";
 
 const gifts = await getGifts()
 const destination = document.querySelector('#gifts')
 
 displayGifts(gifts.length, destination, gifts)
 clickOnCard()
+showBurger()
 
 //tabs
 document.querySelectorAll('.tabs__item').forEach((tab) => {
