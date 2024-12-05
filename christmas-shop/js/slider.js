@@ -3,6 +3,7 @@ export function slider() {
     const slider = document.querySelector('.slider')
     const btnLeft = document.querySelector('#left')
     const btnRight = document.querySelector('#right')
+    const leftMargine = parseFloat( window.getComputedStyle(slider.querySelector('.container')).marginLeft)
     let width = 0
     let step = 0
     let position = 0
@@ -11,7 +12,7 @@ export function slider() {
         width = row.scrollWidth
         const visibleWidth = slider.offsetWidth
         const size = window.innerWidth > 768 ? 3 : 6
-        step = (width - visibleWidth) / size
+        step = ((width - visibleWidth) / size)
         position = 0
         row.style.transform = `translateX(${position}px)`
         updateBtns()
@@ -23,8 +24,8 @@ export function slider() {
         } else {
             btnLeft.classList.remove('disabled')
         }
-        const maxPosition = -(width - slider.offsetWidth)
-        if (position <= maxPosition) {
+        const maxPosition = -(width - slider.offsetWidth + leftMargine)
+        if (position - maxPosition < 1) {
             btnRight.classList.add('disabled')
         } else {
             btnRight.classList.remove('disabled')
@@ -32,7 +33,7 @@ export function slider() {
     }
 
     function move(direction) {
-        const maxPosition = -(width - row.parentElement.offsetWidth)
+        const maxPosition = -(width - slider.offsetWidth + leftMargine)
         if (direction === 'right' && position > maxPosition) {
             position -= step
             if (position < maxPosition) {
