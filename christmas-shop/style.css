@@ -788,3 +788,7 @@ main {
 .close__modal::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+.scroll-top {
+  display: none;
+}

@@ -209,6 +209,20 @@
   .gift-section__header {
     padding-top: 62px;
   }
+
+  .scroll-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    background: var(--static-white);
+    width: 56px;
+    height: 56px;
+  }
 }
 
 @media (max-width: 760px) {
