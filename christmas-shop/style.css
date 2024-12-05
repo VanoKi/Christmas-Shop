@@ -790,5 +790,16 @@ main {
 }
 
 .scroll-top {
-  display: none;
+  /*display: none;*/
+}
+
+.scroll-top_svg {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.scroll-top_hide {
+  display: none; !important;
 }
