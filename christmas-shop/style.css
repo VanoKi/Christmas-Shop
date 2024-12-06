@@ -293,6 +293,7 @@ main {
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
+  transform: translateX(0);
 }
 
 .slider__text {
@@ -787,4 +788,19 @@ main {
 
 .close__modal::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.scroll-top {
+  /*display: none;*/
+}
+
+.scroll-top_svg {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.scroll-top_hide {
+  display: none; !important;
 }
