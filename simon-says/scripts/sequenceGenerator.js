@@ -14,9 +14,9 @@ const getSequence = (level, round) => {
             return Math.random() < 0.5 ? getRandomNumber(1, 9) : getRandomChar()
         }
     })
-    return sequence
+    return sequence.join('')
 }
 
-// export {getSequence}
+export {getSequence}
 
-console.log(getSequence('hard', '5').join(''))
+// console.log(getSequence('hard', '5').join(''))
