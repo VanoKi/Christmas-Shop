@@ -9,5 +9,5 @@ document.querySelector('#start').addEventListener('click',() => {
     let sequence = getSequence(level, round)
     document.querySelector('#sequence').innerText = sequence
     console.log(sequence)
-    generateKeyboard()
+    generateKeyboard(level)
 })
