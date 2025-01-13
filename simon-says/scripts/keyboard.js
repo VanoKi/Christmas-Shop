@@ -22,7 +22,7 @@ const generateKeyboard = (level) => {
         button.textContent = key;
         button.dataset.key = key;
         button.addEventListener('click', () => {
-            console.log(`Вы нажали: ${key}`);
+            console.log(`you press: ${key}`);
         });
         keyboardContainer.appendChild(button);
     });
