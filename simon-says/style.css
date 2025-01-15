@@ -23,9 +23,7 @@ li {
 
 body {
   margin: 0 auto;
-  /*padding: 0;*/
   padding-top: 15vh;
-  /*width: 100vw;*/
   height: 100vh;
   gap: 20px;
   background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
@@ -79,4 +77,6 @@ button:active {
   font-size: 16px;
 }
 
-
+#sequence {
+  font-size: 3rem;
+}
