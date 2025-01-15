@@ -23,39 +23,67 @@ li {
 
 body {
   margin: 0 auto;
-  padding: 0;
+  /*padding: 0;*/
   padding-top: 15vh;
-  width: 100vw;
+  /*width: 100vw;*/
   height: 100vh;
-  /*background: #3E5151;  !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to top, #DECBA4, #3E5151);  !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to top, #DECBA4, #3E5151); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!;*/
+  gap: 20px;
 
-  /*background: #bdc3c7;  !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  !* Chrome 10-25, Safari 5.1-6 *!*/
-  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
+  align-items: stretch;
   /*justify-content: center;*/
 }
 
-#keyboard {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+h1 {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+#controls {
+  margin: 0 auto;
+  display: flex;
   gap: 10px;
-  max-width: 300px;
-  margin: 20px auto;
+}
+
+select {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  transform: scale(0.9);
+  background-color: #ddd;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+  justify-content: center;
+  /*display: grid;*/
+  /*grid-template-columns: repeat(10, 1fr);*/
+  gap: 5px;
+  max-width: 366px;
+  margin: 0 auto;
 }
 
 #keyboard button {
   padding: 10px;
   font-size: 16px;
-  cursor: pointer;
 }
 
-#keyboard button:active {
-  transform: scale(0.95);
-  background-color: #ddd;
-}
+
