@@ -25,6 +25,26 @@ const generateLayout = () => {
   });
   controls.appendChild(levelSelect);
 
-  const rounds = Array.from({length})
+  const roundSelect = document.createElement('select');
+  roundSelect.name = 'round';
+  roundSelect.id = 'rounds';
 
+  const rounds = Array.from({length: 5}, (v, k) => k + 1);
+  rounds.forEach((round) => {
+    const option = document.createElement('option');
+    option.value = round;
+    option.textContent = `${round} round`;
+    roundSelect.appendChild(option);
+  })
+  controls.appendChild(roundSelect);
+
+  const sequenceParagraph = document.createElement('p');
+  sequenceParagraph.id = 'sequence';
+  app.appendChild(sequenceParagraph);
+
+  const keyboardContainer = document.createElement('div');
+  keyboardContainer.id = 'keyboard';
+  app.appendChild(keyboardContainer);
 }
+
+export {generateLayout}

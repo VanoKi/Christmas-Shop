@@ -68,7 +68,7 @@ button:active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  max-width: 366px;
+  max-width: 375px;
   margin: 0 auto;
 }
 
