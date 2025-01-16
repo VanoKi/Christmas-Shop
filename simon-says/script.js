@@ -1,63 +1,9 @@
-function generateGameUI() {
-    const app = document.querySelector('#app'); // Контейнер для игры
-    app.innerHTML = ''; // Очищаем контейнер
+import {generateLayout} from "./scripts/generateLayout.js";
+import {generateKeyboard} from "./scripts/keyboard.js";
+import {getSequence} from "./scripts/sequenceGenerator.js";
 
-    // Заголовок
-    const title = document.createElement('h1');
-    title.textContent = 'Simon says:';
-    app.appendChild(title);
+generateLayout()
 
-    // Контейнер управления
-    const controls = document.createElement('div');
-    controls.id = 'controls';
-    app.appendChild(controls);
-
-    // Кнопка старта
-    const startButton = document.createElement('button');
-    startButton.id = 'start';
-    startButton.textContent = 'Start Game';
-    controls.appendChild(startButton);
-
-    // Селектор уровня
-    const levelSelect = document.createElement('select');
-    levelSelect.name = 'level';
-    levelSelect.id = 'levels';
-
-    const levels = ['easy', 'medium', 'hard'];
-    levels.forEach((level) => {
-        const option = document.createElement('option');
-        option.value = level;
-        option.textContent = level;
-        levelSelect.appendChild(option);
-    });
-    controls.appendChild(levelSelect);
-
-    // Селектор раундов
-    const roundSelect = document.createElement('select');
-    roundSelect.name = 'round';
-    roundSelect.id = 'rounds';
-
-    const rounds = ['1', '2', '3', '4', '5'];
-    rounds.forEach((round) => {
-        const option = document.createElement('option');
-        option.value = round;
-        option.textContent = `${round} round`;
-        roundSelect.appendChild(option);
-    });
-    controls.appendChild(roundSelect);
-
-    // Элемент для отображения последовательности
-    const sequenceParagraph = document.createElement('p');
-    sequenceParagraph.id = 'sequence';
-    app.appendChild(sequenceParagraph);
-
-    // Контейнер для клавиатуры
-    const keyboardContainer = document.createElement('div');
-    keyboardContainer.id = 'keyboard';
-    app.appendChild(keyboardContainer);
-}
-
-// Вызываем функцию при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     generateGameUI();
     let userInput = [];
