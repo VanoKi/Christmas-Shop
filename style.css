@@ -9,8 +9,51 @@ body {
   background-color: #f0f0f0;
 }
 
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nonogram-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+}
+
+.hints {
+  display: grid;
+}
+
+.row-hints {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-rows: repeat(10, 40px);
+  gap: 1px;
+}
+
+.column-hints {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-rows: repeat(10, 40px);
+  gap: 1px;
+}
+
+.hint-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  font-size: 12px;
+  text-align: center;
+}
+
 .nonogram {
   display: grid;
+  grid-column: 2;
+  grid-row: 2;
   grid-template-columns: repeat(10, 40px);
   grid-template-rows: repeat(10, 40px);
   gap: 1px;
