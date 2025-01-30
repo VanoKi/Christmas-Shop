@@ -7,7 +7,7 @@ const solution = [
 ]
 const gridColumns = solution.length
 const gridRows = solution[0].length
-console.log(gridColumns, gridRows)
+console.log(solution)
 const nonogram = document.getElementById('nonogram')
 const rowHints = document.getElementById('row-hints')
 const columnHints = document.getElementById('column-hints')
@@ -78,11 +78,6 @@ const checkSolution = () => {
           cell.style.backgroundColor = 'red';
       } else {
           cell.style.backgroundColor = solution[row][col] === 1 ? '#333' : '#fff';
-      }
-      if (correct) {
-          alert('Congratulations! You solved the puzzle!');
-      } else {
-          alert('Some cells are incorrect. Try again!');
       }
   });
     if (correct) {
