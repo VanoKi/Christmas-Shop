@@ -1,4 +1,3 @@
-const gridSize = 10
 const solution = [
     [0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
     [1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
@@ -11,6 +10,7 @@ const solution = [
     [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
     [1, 1, 0, 0, 1, 0, 0, 1, 0, 0],
 ]
+const gridSize = solution.length
 const nonogram = document.getElementById('nonogram')
 const rowHints = document.getElementById('row-hints')
 const columnHints = document.getElementById('column-hints')
