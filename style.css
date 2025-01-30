@@ -34,7 +34,7 @@ body {
   display: grid;
   grid-column: 1;
   grid-row: 2;
-  grid-template-rows: repeat(10, 40px);
+  grid-template-rows: repeat(var(--grid-rows), 40px);
   gap: 1px;
 }
 
@@ -42,7 +42,7 @@ body {
   display: grid;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: repeat(10, 40px);
+  grid-template-columns: repeat(var(--grid-columns), 40px);
   gap: 1px;
 }
 
