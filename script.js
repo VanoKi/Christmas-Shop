@@ -18,7 +18,8 @@ const solution = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ]
-const gridSize = solution.length
+const gridColumns = solution.length
+const gridRows = solution[0].length
 const nonogram = document.getElementById('nonogram')
 const rowHints = document.getElementById('row-hints')
 const columnHints = document.getElementById('column-hints')
@@ -57,7 +58,7 @@ const generateHints = () => {
 const createBoard = () => {
     nonogram.innerHTML = ''
     document.documentElement.style.setProperty('--grid-size', gridSize);
-    for (let i = 0; i <gridSize * gridSize ; i++) {
+    for (let i = 0; i <gridColumns * gridRows ; i++) {
         const cell = document.createElement('div');
         cell.classList.add('ceil');
         cell.addEventListener('click', () => {
