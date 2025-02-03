@@ -11,6 +11,7 @@ export const createHTML = () => {
   
   const rowHints = document.createElement('div')
   rowHints.id = 'row-hints'
+  rowHints.classList.add('row-hints')
   nonogramContainer.appendChild(rowHints)
 
 
