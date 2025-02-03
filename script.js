@@ -5,6 +5,7 @@ const solution = [
     [1, 0, 0, 0, 1],
     [0, 1, 0, 1, 0]
 ]
+
 const gridColumns = solution.length
 const gridRows = solution[0].length
 console.log(solution)
@@ -89,3 +90,11 @@ const checkSolution = () => {
 
 createBoard(gridRows, gridColumns)
 generateHints()
+
+const btnReset = document.querySelector('.reset')
+const btnCheck = document.querySelector('.check')
+
+btnReset.addEventListener('click', resetGame)
+btnCheck.addEventListener('click', checkSolution)
+
+
