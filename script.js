@@ -1,3 +1,6 @@
+import createHTML from './createHTML.js'
+
+createHTML()
 const solution = [
     [0, 1, 1, 0, 0],
     [1, 0, 1, 0, 1],
@@ -5,7 +8,6 @@ const solution = [
     [1, 0, 0, 0, 1],
     [0, 1, 0, 1, 0]
 ]
-
 const gridColumns = solution.length
 const gridRows = solution[0].length
 console.log(solution)
@@ -45,7 +47,7 @@ const generateHints = () => {
 }
 
 const createBoard = (rows, columns) => {
-    nonogram.innerHTML = ''
+    // nonogram.innerHTML = ''
     document.documentElement.style.setProperty('--grid-rows', rows);
     document.documentElement.style.setProperty('--grid-columns', columns);
     for (let i = 0; i <columns * rows ; i++) {
@@ -96,5 +98,3 @@ const btnCheck = document.querySelector('.check')
 
 btnReset.addEventListener('click', resetGame)
 btnCheck.addEventListener('click', checkSolution)
-
-
