@@ -82,7 +82,7 @@ const checkSolution = () => {
       }
   });
     if (correct) {
-        alert('Congratulations! You solved the puzzle!');
+        alert("Great! You have solved the nonogram!");
     } else {
         alert('Some cells are incorrect. Try again!');
     }
